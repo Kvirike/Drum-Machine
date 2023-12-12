@@ -7,53 +7,53 @@
     <title>Drum Machine</title>
     <script src="index.js"></script>
 </head>
-<body>
-    <div class="container" id="drum-machine">
-        <div class="card text-center mb-3" style="width: 18rem;">
+<body class="d-flex align-items-center justify-content-center">
+    <div class="container" id="drum-machine" style="width:18rem">
+        <div class="card text-center mb-3" >
             <h1 class="text-center">Drum Machine</h1>
             <div class="card my-3">
                 <div class="card-body">
                     <div class="text-center" id="display"></div>
                 </div>
             </div>
-            <div class="d-flex flex-row mb-3">
-                <button class="drum-pad btn btn-primary" id="drum-0" onclick="play('Q')">
+            <div class="d-flex justify-content-center mb-3">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-0" onclick="play('Q')">
                     Q
                     <audio id="Q" class="clip" src="./clip/Q.mp3">
                 </button>
-                <button class="drum-pad btn btn-primary" id="drum-1" onclick="play('W')">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-1" onclick="play('W')">
                     W
                     <audio id="W" class="clip" src="./clip/W.mp3">
                 </button>
-                <button class="drum-pad btn btn-primary" id="drum-2" onclick="play('E')">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-2" onclick="play('E')">
                     E
                     <audio id="E" class="clip" src="./clip/E.mp3">
                 </button>
             </div>
-            <div class="d-flex flex-row mb-3">
-                <button class="drum-pad btn btn-primary" id="drum-3" onclick="play('A')">
+            <div class="d-flex justify-content-center mb-3">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-3" onclick="play('A')">
                     A
                     <audio id="A" class="clip" src="./clip/A.mp3">
                 </button>
-                <button class="drum-pad btn btn-primary" id="drum-4" onclick="play('S')">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-4" onclick="play('S')">
                     S
                     <audio id="S"  class="clip" src="./clip/S.mp3">
                 </button>
-                <button class="drum-pad btn btn-primary" id="drum-5" onclick="play('D')">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-5" onclick="play('D')">
                     D
                     <audio id="D" class="clip" src="./clip/D.mp3">
                 </button>
             </div>
-                <div class="d-flex flex-rows mb-3">
-                <button class="drum-pad btn btn-primary" id="drum-6" onclick="play('Z')">
+            <div class="d-flex justify-content-center mb-3">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-6" onclick="play('Z')">
                     Z
                     <audio id="Z" class="clip" src="./clip/Z.mp3">
                 </button>
-                <button class="drum-pad btn btn-primary" id="drum-7" onclick="play('X')">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-7" onclick="play('X')">
                     X
                     <audio id="X" class="clip" src="./clip/X.mp3">
                 </button>
-                <button class="drum-pad btn btn-primary" id="drum-8" onclick="play('C')">
+                <button class="drum-pad btn btn-primary mx-2" id="drum-8" onclick="play('C')">
                     C
                     <audio id="C" class="clip" src="./clip/C.mp3">
                 </button>
