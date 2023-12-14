@@ -16,4 +16,4 @@ window.document.onkeyup = function(event){
     if(("QWEASDZXC").includes(keyStore)){
         play(keyStore)
     }
-}
+} 
