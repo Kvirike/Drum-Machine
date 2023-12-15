@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInitialState();
     switchBtn.addEventListener('click', toggleOnOff);
+
+    window.document.onkeyup = function(event){
+        let keyStore = event.key.toUpperCase();
+            if(("QWEASDZXC").includes(keyStore)){
+                play(keyStore)
+        }
+    }
 });
 
 function play(str){
@@ -28,13 +35,3 @@ function play(str){
     let audio = document.getElementById(str)
     audio.play();
 }
-
-function keyboardPlay(){
-    window.document.onkeyup = function(event){
-        let keyStore = event.key.toUpperCase();
-            if(("QWEASDZXC").includes(keyStore)){
-                play(keyStore)
-        }
-    }
-}
-keyboardPlay()
