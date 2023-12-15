@@ -1,0 +1,51 @@
+body 
+    background-color: #8d8d8d
+    .main-container 
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
+        .inner-container
+            outline: 5px solid orange
+            position: relative
+            width: 660px
+            text-align: center
+            background-color: #b3b3b3
+            @media max-width: 650px 
+                  transform: scale(0.7)
+            .pad-bank 
+                width: 332px
+                height: 272px
+                display: inline-block
+                margin: 20px
+                .drum-pad
+                    position: relative
+                    float: left
+                    width: 100px
+                    height: 80px
+                    margin: 10px 10px 0 0
+                    border-radius: 5px
+                    box-sizing: border-box
+                    text-align: center
+                    background-color: grey
+                    box-shadow: black 2px 2px 4px
+              .logo
+                position: absolute
+                top: 5px
+                right: 10px
+              .controls-container 
+                width: 240px
+                height: 272px
+                display: inline-block
+                margin: 40px 20px 0 10px
+                vertical-align: top
+                .screenDisp
+                    width: 200px
+                    background-color: gray
+                    margin: 15px auto
+                    padding: 15px
+                    box-sizing: border-box
+                  .control
+                    width: 100px
+                    margin: auto
+                    margin: 5vh 0 0 0

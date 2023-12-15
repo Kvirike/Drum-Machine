@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         drumBtns.forEach(button => button.disabled = !isActive);
         switchBtn.className = isActive ? "btn btn-outline-danger fw-bolder" : "btn btn-outline-success fw-bolder";
-        switchBtn.innerHTML = isActive ? "Off" : "On";
+        switchBtn.innerHTML = isActive ? "Off" :"On";
     }
+
     setInitialState();
     switchBtn.addEventListener('click', toggleOnOff);
 });
-
 
 function play(str){
     let displayField = document.getElementById('display')
@@ -31,7 +31,7 @@ function play(str){
 
 window.document.onkeyup = function(event){
     let keyStore = event.key.toUpperCase();
-    if(("QWEASDZXC").includes(keyStore)){
-        play(keyStore)
+        if(("QWEASDZXC").includes(keyStore)){
+            play(keyStore)
     }
 }

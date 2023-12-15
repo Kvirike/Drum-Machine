@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="icon" type="image/x-icon" href="./media/favicon/favicon.png">
     <title>Drum Machine</title>
     <script src="index.js"></script>
 </head>
@@ -14,48 +15,49 @@
             <div class="pad-bank">
                 <button class="drum-pad text-center" onclick= "play('Q')" id="Heater-1">
                     Q
-                    <audio class="clip" id="Q" src="./clip/Q.mp3"></audio>
+                    <audio class="clip" id="Q" src="./media/Q.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Heater-2" onclick= "play('W')">
                     W
-                    <audio class="clip" id="W" src="./clip/W.mp3"></audio>
+                    <audio class="clip" id="W" src="./media/W.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Heater-3" onclick= "play('E')">
                     E
-                    <audio class="clip" id="E" src="./clip/E.mp3"></audio>
+                    <audio class="clip" id="E" src="./media/E.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Heater-4" onclick= "play('A')">
                     A
-                    <audio class="clip" id="A" src="./clip/A.mp3"></audio>
+                    <audio class="clip" id="A" src="./media/A.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Clap" onclick= "play('S')">
                     S
-                    <audio class="clip" id="S" src="./clip/S.mp3"></audio>
+                    <audio class="clip" id="S" src="./media/S.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Open-HH" onclick= "play('D')">
                     D
-                    <audio class="clip" id="D" src="./clip/D.mp3"></audio>
+                    <audio class="clip" id="D" src="./media/D.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Kick-n'-Hat" onclick= "play('Z')">
                     Z
-                    <audio class="clip" id="Z" src="./clip/Z.mp3"></audio>
+                    <audio class="clip" id="Z" src="./media/Z.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Kick" onclick= "play('X')">
                     X
-                    <audio class="clip" id="X" src="./clip/X.mp3"></audio>
+                    <audio class="clip" id="X" src="./media/X.mp3"></audio>
                 </button>
                 <button class="drum-pad" id="Closed-HH" onclick= "play('C')">
                     C
-                    <audio class="clip" id="C" src="./clip/C.mp3"></audio>
+                    <audio class="clip" id="C" src="./media/C.mp3"></audio>
                 </button>
             </div>
             <div class="logo">
                 <div class="inner-logo fst-italic fw-bold">KVK</div>
-        </div>
-        <div class="controls-container">
-            <p id="display"></p>
-            <div class="control d-grid gap-2 col-6 mx-auto">
-                <button type="button" id="switch" class="btn btn-outline-success fw-bolder" onclick="onOff()">On</button>
+            </div>
+            <div class="controls-container">
+                <p id="display" class="screenDisp"></p>
+                <div class="control d-grid gap-2 col-6 mx-auto">
+                    <button type="button" id="switch" class="btn btn-outline-success fw-bolder">On</button>
+                </div>
             </div>
         </div>
     </div>
