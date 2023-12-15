@@ -12,55 +12,51 @@
     <div class="main-container">
         <div class="inner-container" id="drum-machine">
             <div class="pad-bank">
-                <div class="drum-pad" id="Heater-1" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                <button class="drum-pad text-center" onclick= "play('Q')" id="Heater-1">
                     Q
-                    <audio class="clip" id="Q" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Heater-2" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="Q" src="./clip/Q.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Heater-2" onclick= "play('W')">
                     W
-                    <audio class="clip" id="W" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Heater-3" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="W" src="./clip/W.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Heater-3" onclick= "play('E')">
                     E
-                    <audio class="clip" id="E" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Heater-4" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="E" src="./clip/E.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Heater-4" onclick= "play('A')">
                     A
-                    <audio class="clip" id="A" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Clap" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="A" src="./clip/A.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Clap" onclick= "play('S')">
                     S
-                    <audio class="clip" id="S" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Open-HH" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="S" src="./clip/S.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Open-HH" onclick= "play('D')">
                     D
-                    <audio class="clip" id="D" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Kick-n'-Hat" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="D" src="./clip/D.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Kick-n'-Hat" onclick= "play('Z')">
                     Z
-                    <audio class="clip" id="Z" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Kick" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="Z" src="./clip/Z.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Kick" onclick= "play('X')">
                     X
-                    <audio class="clip" id="X" src=""></audio>
-                </div>
-                <div class="drum-pad" id="Closed-HH" style="background-color: grey; margin-top: 10px; box-shadow: black 3px 3px 5px;">
+                    <audio class="clip" id="X" src="./clip/X.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="Closed-HH" onclick= "play('C')">
                     C
-                    <audio class="clip" id="C" src=""></audio>
-                </div>
+                    <audio class="clip" id="C" src="./clip/C.mp3"></audio>
+                </button>
             </div>
             <div class="logo">
-                <div class="inner-logo ">KVK&nbsp;</div>
+                <div class="inner-logo fst-italic fw-bold">KVK</div>
         </div>
         <div class="controls-container">
-            <div class="control">
-                <p>Power</p>
-                <div class="select">
-                    <div class="inner" style="float: right;"></div>
-                </div>
+            <p id="display"></p>
+            <div class="control d-grid gap-2 col-6 mx-auto">
+                <button type="button" id="switch" class="btn btn-outline-success fw-bolder" onclick="onOff()">On</button>
             </div>
-            <p id="display">Heater 3</p>
-            <div class="control"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
