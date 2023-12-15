@@ -29,9 +29,12 @@ function play(str){
     audio.play();
 }
 
-window.document.onkeyup = function(event){
-    let keyStore = event.key.toUpperCase();
-        if(("QWEASDZXC").includes(keyStore)){
-            play(keyStore)
+function keyboardPlay(){
+    window.document.onkeyup = function(event){
+        let keyStore = event.key.toUpperCase();
+            if(("QWEASDZXC").includes(keyStore)){
+                play(keyStore)
+        }
     }
 }
+keyboardPlay()
