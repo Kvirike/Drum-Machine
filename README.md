@@ -1,1 +1,1 @@
-## [FreeCodeCamp-Drum-Machine](https://kvirike.github.io/FreeCodeCamp-Drum-Machine/)
+## [Drum-Machine](https://kvirike.github.io/FreeCodeCamp-Drum-Machine/)
